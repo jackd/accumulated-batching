@@ -11,13 +11,13 @@ with open(os.path.join(os.path.dirname(__file__), "requirements.txt")) as fp:
     install_requires = fp.read().split("\n")
 
 setup(
-    name="python_pkg",  # TODO
-    description="python package template",  # TODO
-    url="https://github.com/jackd",
+    name="accumulator-batching",
+    description="Accumulator-based batching with tf.data",
+    url="https://github.com/jackd/accumulator-batching",
     author="Dominic Jack",
     author_email="thedomjack@gmail.com",
     license="Apache 2.0",
-    packages=["python_pkg"],  # TODO
+    packages=["accumulator_batching"],
     install_requires=install_requires,
     zip_safe=True,
     python_requires=">=3.6",
